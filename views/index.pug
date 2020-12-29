@@ -1,132 +1,148 @@
 head
-	title goldenlib's CrewLink Server
-	link (rel="icon" href="https://cdn.discordapp.com/icons/793480510084612156/b2866f0997b02d3b072277d3c08c0d42.png?size=256" type="image/x-icon")<meta property="og:title" content="goldenlib's CrewLink Server">
-	meta (property="og:description" content="Voice server for Among Us proximity chat")
-	meta (property="og:image" content="https://github.com/ottomated/CrewLink/raw/master/logo.png")
-	style.
-		@font-face {
-		font-family: 'amongus';
-		src: URL('https://cdn.glitch.com/aee4830c-69c1-45ce-b954-54174e6b39ad%2Famongus.ttf?v=1607382044419') format('truetype');
-		}
-		ol {
-		text-align: left;
-		}
-		body {
-		background-color: black;
-		color: white;
-		font-family: sans-serif;
-		text-align: center;
-		margin: 0;
-		height: 100%;
-		}
-		img {
-		margin: auto;
-		margin-top: 0;
-		display: block;
-		-webkit-filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
-		filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
-		}
-		a {
-		text-decoration: none;
-		color: #3498db
-		}
-		a:hover {
-		text-decoration: underline;
-		}
-		.holder {
-		background-color: #23272a;
-		border-radius: 5px;
-		color: white;
-		padding: 5px;
-		width: 100%;
-		max-width: 600px;
-		margin: auto;
-		}
-		.online {
-		color: chartreuse;
-		}
-		@keyframes slideleft {
-		from {
-		background-position: 0%;
-		}
-		to {
-		background-position: 90000%;
-		}
-		}
-		@-webkit-keyframes slideleft {
-		from {
-		background-position: 0%;
-		}
-		to {
-		background-position: 90000%;
-		}
-		}
-		.bg {
-		background-image: url('https://i.gyazo.com/ea041433a100dd4075546588f71e56d1.jpg');
-		background-repeat: repeat-x;
-		animation: slideleft 800s infinite linear;
-		background-size: zoom;
-		-webkit-animation: slideleft 800s infinite linear;
-		width: 100%;
-		min-height: 100vh;
-		margin: 0;
-		padding-bottom: 10px;
-		}
-		input {
-		background-color: black;
-		color: white;
-		border: 1px solid white;
-		border-radius: 2px;
-		}
-		.banner {
-		height: 30px;
-		width: 100%;
-		overflow: hidden;
-		text-align: center;
-		margin-bottom: 30px;
-		line-height: 30px;
-		}
-		.banner a {
-		text-decoration: underline;
-		}
-<body>
-<div class="bg" id="view">
-<a href="https://discord.gg/7MH5C9YrtB" target="_blank"><img id="i" src="https://cdn.discordapp.com/icons/793480510084612156/b2866f0997b02d3b072277d3c08c0d42.png?size=256" height="128"></a>
-<b><p style="margin-bottom: 10px; font-family: amongus; font-size: 25px;">goldenlib's</p></b>
-<h1 id="t" style="margin-top: 0; margin-bottom: 15px; font-family: amongus; font-size: 75px;">CrewLink
-Server</h1>
-<p style="margin-top: 0; font-family: amongus; font-size: 25px;">A Public CrewLink Server that you can use!</p>
-<p class="online"> 
-There #{connectionCount === 1 ? 'is' : 'are'} currently #{connectionCount} connected user#{connectionCount === 1 ? '' : 's'}.
-</p>
-
-
-<div class="holder" >
-<p><b>How To Use:</b></p>
-<ol>
-<li> Install CrewLink from <a href="https://github.com/ottomated/CrewLink/releases">The Official Github</a>                (If you have not already)</li>
-<li> Click on the settings icon in the top left of CrewLink</li>
-<li> Scroll down to the section named "Voice Server"</li>
-<li> In the field, enter the following: <input style="text-align: center;" type="text" value="http://amongus.goldenlib.fr"</li>
-<li> Click the back button to got back to the CrewLink main menu and press ctrl + r</li></ol>
-<p><b>Your installation is now complete!</b></p>
-
-<br><hr style="height:2px;border-width:0;color:gray;background-color:gray;max-width:90%;"><p><b>Need help?
-
-</b></p><p>Feel free to <a href="https://discord.gg/7MH5C9YrtB">join the Discord</a> with any questions :)</p>
-
-<hr style="height:2px;border-width:0;color:gray;background-color:gray;max-width:90%;margin-bottom:25px;">
-
-<p><b>Connectivity Issues?</b></p>
-<ol>
-<li> <span class="y"><b>Notice</b></span> | You must be connected to the same voice server to play with people!</li>
-<li> The server may be full, you will need to wait for space to open up</li>
-<li> The server may be having connectivity problems</li></ol>
-
-<td><a href="https://discord.gg/7MH5C9YrtB" target="_blank"><img style="border:0; width: 100px; height: 100px;" src="https://cdn.discordapp.com/attachments/763680278375301130/785735647863635988/91_Discord_logo_logos-512.png"></a></td>
-<hr style="height:2px;border-width:0;color:gray;background-color:gray;max-width:90%;margin-bottom:25px;">
-
-<p>Want to launch your own server? <a href="https://github.com/ottomated/CrewLink-server" target="_blank">Click here
-to learn how</a>.</p>
-
-</div></body>
+  title CrewLink Server
+  link(rel='icon' href='https://cdn.discordapp.com/icons/793480510084612156/b2866f0997b02d3b072277d3c08c0d42.png?size=256' type='image/x-icon')
+  meta(property='og:title' content='CrewLink Server')
+  meta(property='og:description' content='Voice server for Among Us proximity chat')
+  meta(property='og:image' content='https://github.com/ottomated/CrewLink/raw/master/logo.png')
+style.
+  @font-face {
+  font-family: 'amongus';
+  src: URL('https://cdn.glitch.com/aee4830c-69c1-45ce-b954-54174e6b39ad%2Famongus.ttf?v=1607382044419') format('truetype');
+  }
+  ol {
+  text-align: left;
+  }
+  body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  height: 100%;
+  }
+  img {
+  margin: auto;
+  margin-top: 0;
+  display: block;
+  -webkit-filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
+  filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
+  }
+  a {
+  text-decoration: none;
+  color: #3498db
+  }
+  a:hover {
+  text-decoration: underline;
+  }
+  .holder {
+  background-color: #23272a;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  }
+  .online {
+  color: chartreuse;
+  }
+  @keyframes slideleft {
+  from {
+  background-position: 0%;
+  }
+  to {
+  background-position: 90000%;
+  }
+  }
+  @-webkit-keyframes slideleft {
+  from {
+  background-position: 0%;
+  }
+  to {
+  background-position: 90000%;
+  }
+  }
+  .bg {
+  background-image: url('https://i.gyazo.com/ea041433a100dd4075546588f71e56d1.jpg');
+  background-repeat: repeat-x;
+  animation: slideleft 800s infinite linear;
+  background-size: zoom;
+  -webkit-animation: slideleft 800s infinite linear;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding-bottom: 10px;
+  }
+  input {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 2px;
+  }
+  .banner {
+  height: 30px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 30px;
+  }
+  .banner a {
+  text-decoration: underline;
+  }
+#view.bg
+  a(href='https://discord.gg/7MH5C9YrtB' target='_blank')
+    img#i(src='https://cdn.discordapp.com/icons/793480510084612156/b2866f0997b02d3b072277d3c08c0d42.png?size=256' height='128')
+  b
+    p(style='margin-bottom: 10px; font-family: amongus; font-size: 25px;') goldenlib&apos;s
+  h1#t(style='margin-top: 0; margin-bottom: 15px; font-family: amongus; font-size: 75px;')
+    | CrewLink
+    | Server
+  p(style='margin-top: 0; font-family: amongus; font-size: 25px;') A Public CrewLink Server that you can use!
+  p.online
+    | There #{connectionCount === 1 ? &apos;is&apos; : &apos;are&apos;} currently #{connectionCount} connected user#{connectionCount === 1 ? &apos;&apos; : &apos;s&apos;}.
+  .holder
+    p
+      b How To Use:
+    ol
+      li
+        | Install CrewLink from 
+        a(href='https://github.com/ottomated/CrewLink/releases') The Official Github
+        |                 (If you have not already)
+      li  Click on the settings icon in the top left of CrewLink
+      li  Scroll down to the section named &quot;Voice Server&quot;
+      li
+        | In the field, enter the following:&emsp;
+        input(style='text-align: center;' type='text' value='http://amongus.goldenlib.fr' <='' li='')
+      li  Click the back button to got back to the CrewLink main menu and press ctrl + r
+    p
+      b Your installation is now complete!
+    br
+    hr(style='height:2px;border-width:0;color:gray;background-color:gray;max-width:90%;')
+    p
+      b
+        | Need help?
+    p
+      | Feel free to 
+      a(href='https://discord.gg/7MH5C9YrtB') join the Discord
+      |  with any questions :)
+    hr(style='height:2px;border-width:0;color:gray;background-color:gray;max-width:90%;margin-bottom:25px;')
+    p
+      b Connectivity Issues?
+    ol
+      li
+        span.y
+          b Notice
+        |  | You must be connected to the same voice server to play with people!
+      li  The server may be full, you will need to wait for space to open up
+      li  The server may be having connectivity problems
+    td
+      a(href='https://discord.gg/7MH5C9YrtB' target='_blank')
+        img(style='border:0; width: 100px; height: 100px;' src='https://cdn.discordapp.com/attachments/763680278375301130/785735647863635988/91_Discord_logo_logos-512.png')
+    hr(style='height:2px;border-width:0;color:gray;background-color:gray;max-width:90%;margin-bottom:25px;')
+    p
+      | Want to launch your own server? 
+      a(href='https://github.com/ottomated/CrewLink-server' target='_blank')
+        | Click here
+        | to learn how
+      | .
