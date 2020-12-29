@@ -1,97 +1,30 @@
 doctype html
 head
-  title CrewLink Server
-  link(rel='icon' href='https://cdn.discordapp.com/icons/793480510084612156/b2866f0997b02d3b072277d3c08c0d42.png?size=256' type='image/x-icon')
-  meta(property='og:title' content='CrewLink Server')
-  meta(property='og:description' content='Voice server for Among Us proximity chat')
-  meta(property='og:image' content='https://github.com/ottomated/CrewLink/raw/master/logo.png')
-  style.
-    @font-face {
-    font-family: 'amongus';
-    src: URL('https://cdn.glitch.com/aee4830c-69c1-45ce-b954-54174e6b39ad%2Famongus.ttf?v=1607382044419') format('truetype');
-    }
-    ol {
-    text-align: left;
-    }
-    body {
-    background-color: black;
-    color: white;
-    font-family: sans-serif;
-    text-align: center;
-    margin: 0;
-    height: 100%;
-    }
-    img {
-    margin: auto;
-    margin-top: 0;
-    display: block;
-    -webkit-filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
-    filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
-    }
-    a {
-    text-decoration: none;
-    color: #3498db
-    }
-    a:hover {
-    text-decoration: underline;
-    }
-    .holder {
-    background-color: #23272a;
-    border-radius: 5px;
-    color: white;
-    padding: 5px;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    }
-    .online {
-    color: chartreuse;
-    }
-    @keyframes slideleft {
-    from {
-    background-position: 0%;
-    }
-    to {
-    background-position: 90000%;
-    }
-    }
-    @-webkit-keyframes slideleft {
-    from {
-    background-position: 0%;
-    }
-    to {
-    background-position: 90000%;
-    }
-    }
-    .bg {
-    background-image: url('https://i.gyazo.com/ea041433a100dd4075546588f71e56d1.jpg');
-    background-repeat: repeat-x;
-    animation: slideleft 800s infinite linear;
-    background-size: zoom;
-    -webkit-animation: slideleft 800s infinite linear;
-    width: 100%;
-    min-height: 100vh;
-    margin: 0;
-    padding-bottom: 10px;
-    }
-    input {
-    background-color: black;
-    color: white;
-    border: 1px solid white;
-    border-radius: 2px;
-    }
-    .banner {
-    height: 30px;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    margin-bottom: 30px;
-    line-height: 30px;
-    }
-    .banner a {
-    text-decoration: underline;
-    }
-		
+	title CrewLink Server
+	link(rel="icon", href="https://cdn.discordapp.com/icons/793480510084612156/b2866f0997b02d3b072277d3c08c0d42.png", type="image/x-icon")
+	meta(property='og:title' content='goldenlib's CrewLink Server')
+	meta(property='og:description' content='Voice server for Among Us proximity chat')
+	meta(property='og:image' content='https://cdn.discordapp.com/icons/793480510084612156/b2866f0997b02d3b072277d3c08c0d42.png)
+	style.
+		body {
+		background-color: #23272a;
+		color: white;
+		font-family: sans-serif;
+		text-align: center;
+		}
+		img {
+		height: 128px;
+		width: 128px;
+		margin: 32px auto;
+		display: block;
+		}
+		a {
+			text-decoration: none;
+			color: #3498db
+		}
+		a:hover {
+			text-decoration: underline;
+		}
 img(src="https://github.com/ottomated/CrewLink/raw/master/logo.png")
 h1 CrewLink Server de Goldenlib
 p This is a CrewLink Server running on <input style="text-align: center;" type="text" value="#{address}" readonly="">.
