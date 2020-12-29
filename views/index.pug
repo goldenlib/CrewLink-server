@@ -4,92 +4,92 @@ head
   meta(property='og:title' content='CrewLink Server')
   meta(property='og:description' content='Voice server for Among Us proximity chat')
   meta(property='og:image' content='https://github.com/ottomated/CrewLink/raw/master/logo.png')
-style.
-  @font-face {
-  font-family: 'amongus';
-  src: URL('https://cdn.glitch.com/aee4830c-69c1-45ce-b954-54174e6b39ad%2Famongus.ttf?v=1607382044419') format('truetype');
-  }
-  ol {
-  text-align: left;
-  }
-  body {
-  background-color: black;
-  color: white;
-  font-family: sans-serif;
-  text-align: center;
-  margin: 0;
-  height: 100%;
-  }
-  img {
-  margin: auto;
-  margin-top: 0;
-  display: block;
-  -webkit-filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
-  filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
-  }
-  a {
-  text-decoration: none;
-  color: #3498db
-  }
-  a:hover {
-  text-decoration: underline;
-  }
-  .holder {
-  background-color: #23272a;
-  border-radius: 5px;
-  color: white;
-  padding: 5px;
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-  }
-  .online {
-  color: chartreuse;
-  }
-  @keyframes slideleft {
-  from {
-  background-position: 0%;
-  }
-  to {
-  background-position: 90000%;
-  }
-  }
-  @-webkit-keyframes slideleft {
-  from {
-  background-position: 0%;
-  }
-  to {
-  background-position: 90000%;
-  }
-  }
-  .bg {
-  background-image: url('https://i.gyazo.com/ea041433a100dd4075546588f71e56d1.jpg');
-  background-repeat: repeat-x;
-  animation: slideleft 800s infinite linear;
-  background-size: zoom;
-  -webkit-animation: slideleft 800s infinite linear;
-  width: 100%;
-  min-height: 100vh;
-  margin: 0;
-  padding-bottom: 10px;
-  }
-  input {
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-  border-radius: 2px;
-  }
-  .banner {
-  height: 30px;
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-  margin-bottom: 30px;
-  line-height: 30px;
-  }
-  .banner a {
-  text-decoration: underline;
-  }
+  style.
+    @font-face {
+    font-family: 'amongus';
+    src: URL('https://cdn.glitch.com/aee4830c-69c1-45ce-b954-54174e6b39ad%2Famongus.ttf?v=1607382044419') format('truetype');
+    }
+    ol {
+    text-align: left;
+    }
+    body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    height: 100%;
+    }
+    img {
+    margin: auto;
+    margin-top: 0;
+    display: block;
+    -webkit-filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
+    filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
+    }
+    a {
+    text-decoration: none;
+    color: #3498db
+    }
+    a:hover {
+    text-decoration: underline;
+    }
+    .holder {
+    background-color: #23272a;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    }
+    .online {
+    color: chartreuse;
+    }
+    @keyframes slideleft {
+    from {
+    background-position: 0%;
+    }
+    to {
+    background-position: 90000%;
+    }
+    }
+    @-webkit-keyframes slideleft {
+    from {
+    background-position: 0%;
+    }
+    to {
+    background-position: 90000%;
+    }
+    }
+    .bg {
+    background-image: url('https://i.gyazo.com/ea041433a100dd4075546588f71e56d1.jpg');
+    background-repeat: repeat-x;
+    animation: slideleft 800s infinite linear;
+    background-size: zoom;
+    -webkit-animation: slideleft 800s infinite linear;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 10px;
+    }
+    input {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    }
+    .banner {
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 30px;
+    }
+    .banner a {
+    text-decoration: underline;
+    }
 #view.bg
   a(href='https://discord.gg/7MH5C9YrtB' target='_blank')
     img#i(src='https://cdn.discordapp.com/icons/793480510084612156/b2866f0997b02d3b072277d3c08c0d42.png?size=256' height='128')
@@ -112,8 +112,8 @@ style.
       li  Click on the settings icon in the top left of CrewLink
       li  Scroll down to the section named &quot;Voice Server&quot;
       li
-        | In the field, enter the following:&emsp;
-        input(style='text-align: center;' type='text' value='http://amongus.goldenlib.fr' <='' li='')
+        | In the field, enter the following: 
+        input(style='text-align: center;' type='text' value='http://amongus.goldenlib.fr')
       li  Click the back button to got back to the CrewLink main menu and press ctrl + r
     p
       b Your installation is now complete!
@@ -136,9 +136,8 @@ style.
         |  | You must be connected to the same voice server to play with people!
       li  The server may be full, you will need to wait for space to open up
       li  The server may be having connectivity problems
-    td
-      a(href='https://discord.gg/7MH5C9YrtB' target='_blank')
-        img(style='border:0; width: 100px; height: 100px;' src='https://cdn.discordapp.com/attachments/763680278375301130/785735647863635988/91_Discord_logo_logos-512.png')
+    a(href='https://discord.gg/7MH5C9YrtB')
+      img(style='border:0; width: 100px; height: 100px;' src='https://cdn.discordapp.com/attachments/763680278375301130/785735647863635988/91_Discord_logo_logos-512.png')
     hr(style='height:2px;border-width:0;color:gray;background-color:gray;max-width:90%;margin-bottom:25px;')
     p
       | Want to launch your own server? 
